@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobMatch Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="fields">
+        <h1>JobMatch Calculator</h1>
+
+        <p class="subheading large">
+            What are your chances of getting the job? Let’s find out.
+        </p>
+
+        <div class="punctuality">
+            <label for="punctuality">When did you arrive to the interview?</label>
+            <button class="my-button" onclick="save_punct(0, this)">Late</button>
+            <button class="my-button" onclick="save_punct(1, this)">On time</button>
+        </div>
+
+        <div class="tech">
+            <label for="tech">How did the technical interview go? </label>
+            <button class="my-button" onclick="save_tech(1, this)">1</button>
+            <button class="my-button" onclick="save_tech(2, this)">2</button>
+            <button class="my-button" onclick="save_tech(3, this)">3</button>
+            <button class="my-button" onclick="save_tech(4, this)">4</button>
+            <button class="my-button" onclick="save_tech(5, this)">5</button>
+        </div>
+
+        <div class="mood">
+            <label for="mood">How was the interviewer's mood? </label>
+            <button class="my-button" onclick="save_mood(1, this)">1</button>
+            <button class="my-button" onclick="save_mood(2, this)">2</button>
+            <button class="my-button" onclick="save_mood(3, this)">3</button>
+            <button class="my-button" onclick="save_mood(4, this)">4</button>
+            <button class="my-button" onclick="save_mood(5, this)">5</button>
+        </div>
+
+        <div class="chem">
+            <label for="chem">How good was the chemistry? </label>
+            <button class="my-button" onclick="save_chem(1, this)">1</button>
+            <button class="my-button" onclick="save_chem(2, this)">2</button>
+            <button class="my-button" onclick="save_chem(3, this)">3</button>
+            <button class="my-button" onclick="save_chem(4, this)">4</button>
+            <button class="my-button" onclick="save_chem(5, this)">5</button>
+        </div>
+
+        <div class="gpa">
+            <label for="gpa">What's your rounded GPA?</label>
+            <button class="my-button" onclick="save_gpa(1, this)">1</button>
+            <button class="my-button" onclick="save_gpa(2, this)">2</button>
+            <button class="my-button" onclick="save_gpa(3, this)">3</button>
+            <button class="my-button" onclick="save_gpa(4, this)">4</button>
+            <button class="my-button" onclick="save_gpa(5, this)">5</button>
+        </div>
+
+        <div class="luck">
+            <label for="luck">What's your "trynefaktor"? </label>
+            <button class="my-button" onclick="save_luck(1, this)">1</button>
+            <button class="my-button" onclick="save_luck(2, this)">2</button>
+            <button class="my-button" onclick="save_luck(3, this)">3</button>
+            <button class="my-button" onclick="save_luck(4, this)">4</button>
+            <button class="my-button" onclick="save_luck(5, this)">5</button>
+        </div>
+
+        <div class="calc">
+            <button class="my-button calc space" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div class="output space">
+            <label class="large">Probability:</label>
+            <span id="prediction" class="large">–</span>
+        </div>
+
+        <div class="info">
+            <label>Backed by data from 500 interviews, our model uses machine learning to predict outcomes with over 90%
+                accuracy.
+                Contact us at stinegaaseide@gmail.com or +4790233146 for more information.</label>
+        </div>
+
+    </div>
+    </div>
+</body>
