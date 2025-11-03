@@ -4,14 +4,15 @@ This application can be used to calculate how likely you are to get a job you ha
 ## Installation and setup
 Clone the repository from GitHub. In your terminal run the command:
 
-    ```bash 
-    git clone <https://github.com/GitHub_username/JobMatch-Calculator.git>
-    ```
+```bash 
+git clone <https://github.com/GitHub_username/JobMatch-Calculator.git>
+```
 
-    Navigate to the correct directory by running the command:
-    ```bash
-    cd Prosjekt_Omny
-    ```
+Navigate to the correct directory by running the command:
+
+```bash
+cd Prosjekt_Omny
+```
 
 ## Run the application
 Install Live Server extension if you haven't already.
